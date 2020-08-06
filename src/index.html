@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/wc-blog.esm.js"></script>
+  <script nomodule src="/build/wc-blog.js"></script>
+
+  <style>
+    html {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      margin: 0 auto;
+      max-width: 1400px;
+    }
+
+    gh-blog {
+      flex: 1;
+    }
+    
+    gh-post {
+      display: block;
+      padding: 16px 20px;
+      border-radius: 3px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <gh-blog name="GMike's Babblings">
+      <gh-post gist-id="03cdb9f336a185e281818bedb904856a" />
+    </gh-blog>
+  </main>
+</body>
+</html>
